@@ -16,8 +16,8 @@ RUN mkdir -p $PLANTUML_DIR && \
     --no-check-certificate -O $PLANTUML
 COPY plantuml /usr/local/bin/plantuml
 RUN chmod 755 /usr/local/bin/plantuml
-#RUN apt-get remove --purge -y --force-yes $(apt-mark showauto) \
-#    && rm -rf /var/lib/apt/lists/*
+RUN apt-get remove --purge -y --force-yes $(apt-mark showauto) \
+    && rm -rf /var/lib/apt/lists/*
 
 EXPOSE 5000
 VOLUME /data
