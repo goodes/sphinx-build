@@ -1,6 +1,5 @@
-Sphinx==1.6.5
-click==5.0
-sphinx-autobuild==0.7.1
+Sphinx
+sphinx-autobuild
 sphinx_rtd_theme
 #sphinxcontrib-blockdiag
 #sphinxcontrib-actdiag
@@ -9,3 +8,4 @@ sphinx_rtd_theme
 sphinxcontrib-plantuml
 texext
 sympy
+Pillow

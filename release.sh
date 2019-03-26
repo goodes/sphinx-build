@@ -15,11 +15,11 @@ echo "version: $version"
 ./build.sh
 
 # tag it
-#git add -A
-#git commit -m "version $version"
-#git tag -a "$version" -m "version $version"
-#git push
-#git push --tags
+git add -A
+git commit -m "version $version"
+git tag -a "$version" -m "version $version"
+git push
+git push --tags
 
 docker tag $USERNAME/$IMAGE:latest $USERNAME/$IMAGE:$version
 
